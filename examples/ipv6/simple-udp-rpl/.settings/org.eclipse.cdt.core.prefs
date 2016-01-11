@@ -1,0 +1,6 @@
+eclipse.preferences.version=1
+environment/project/fr.ac6.managedbuild.toolchain.gnu.cross.base.514786901/PATH/delimiter=;
+environment/project/fr.ac6.managedbuild.toolchain.gnu.cross.base.514786901/PATH/operation=replace
+environment/project/fr.ac6.managedbuild.toolchain.gnu.cross.base.514786901/PATH/value=C\:\\cygwin64\\bin;C\:\\Ac6\\SystemWorkbench\\plugins\\fr.ac6.mcu.externaltools.arm-none.win32_1.3.0.201507241045\\tools\\compiler\\bin;C\:\\Ac6\\SystemWorkbench\\plugins\\fr.ac6.mcu.externaltools.win32_1.3.0.201507241045\\tools\\make;C\:/Program Files/Java/jre1.8.0_66/bin/server;C\:/Program Files/Java/jre1.8.0_66/bin;C\:/Program Files/Java/jre1.8.0_66/lib/amd64;C\:\\ProgramData\\Oracle\\Java\\javapath;C\:\\Program Files (x86)\\Parallels\\Parallels Tools\\Applications;C\:\\Windows\\system32;C\:\\Windows;C\:\\Windows\\System32\\Wbem;C\:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C\:\\Program Files (x86)\\GNU Tools ARM Embedded\\5.2 2015q4\\bin;C\:\\Program Files (x86)\\Silicon Laboratories\\ClockBuilder Pro\\Bin;C\:\\Ac6\\SystemWorkbench
+environment/project/fr.ac6.managedbuild.toolchain.gnu.cross.base.514786901/append=true
+environment/project/fr.ac6.managedbuild.toolchain.gnu.cross.base.514786901/appendContributed=true

@@ -27,19 +27,6 @@ endif
 PLATFORM_ROOT_DIR = $(CONTIKI)/platform/$(TARGET)
 -include $(PLATFORM_ROOT_DIR)/Makefile.$(BOARD)
 
-ifeq ($(SENSORBOARD),iks01a1)
- ${info Compiling with X-NUCLEO-IKS01A1 sensors files}
- ${info ***************************************************}
- -include $(PLATFORM_ROOT_DIR)/Makefile.$(SENSORBOARD)
-else ifeq ($(SENSORBOARD),)
- ${info NOT compiling files for any sensors expansion board}
- ${info ***************************************************}
-else
-  ${info Error: SENSORBOARD can be: iks01a1}
- ${info ***************************************************}
-  ${error }
-endif
-
 
 
 #Currently we support only GCC
@@ -187,8 +174,8 @@ ARCH+=$(ARCH_DRIVERS_IDS01AX)
 ARCH+=$(ARCH_DRIVERS_SPIRIT1_MINIMAL)
 ARCH+=$(STM32L1XX_HAL_MINIMAL)
 
-CFLAGS += -DUSE_STM32L152_EVAL \
-		-DSTM32L152xE \
+CFLAGS += -DUSE_SP1ML \
+		-DSTM32L151xB \
 		-DUSE_STM32L1XX_NUCLEO \
 		-DUSE_HAL_DRIVER \
 		-DUSE_STDPERIPH_DRIVER \
@@ -204,7 +191,7 @@ CFLAGS += -I. \
 	  -I$(CONTIKI)/platform/$(TARGET)/stm32cube-lib/drivers/spirit1/inc \
 	  -I$(CONTIKI)/platform/$(TARGET)/stm32cube-lib/drivers/CMSIS \
 	  -I$(CONTIKI)/platform/$(TARGET)/stm32cube-lib/drivers/STM32L1xx_HAL_Driver/Inc \
-	  -I$(CONTIKI)/cpu/arm/stm32l152 \
+	  -I$(CONTIKI)/cpu/arm/stm32l151 \
 	  -I$(CONTIKI)/core                   \
 	  -I$(CONTIKI)/platform/$(TARGET)/dev
 
@@ -219,9 +206,9 @@ endif
 
 CONTIKI_TARGET_SOURCEFILES += $(ARCH) $(CONTIKI_TARGET_MAIN)
 
-MCU=stm32l152
-CONTIKI_CPU=$(CONTIKI)/cpu/arm/stm32l152
-include $(CONTIKI)/cpu/arm/stm32l152/Makefile.stm32l152
+MCU=stm32l151
+CONTIKI_CPU=$(CONTIKI)/cpu/arm/stm32l151
+include $(CONTIKI)/cpu/arm/stm32l151/Makefile.stm32l151
 
 
 MODULES+=core/net \

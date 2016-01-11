@@ -45,9 +45,9 @@
 #define I2Cx_RELEASE_RESET()            __I2C1_RELEASE_RESET()
 /*---------------------------------------------------------------------------*/
 /* Definition for I2Cx Pins */
-#define I2Cx_SCL_PIN                    GPIO_PIN_8
+#define I2Cx_SCL_PIN                    GPIO_PIN_6
 #define I2Cx_SCL_GPIO_PORT              GPIOB
-#define I2Cx_SDA_PIN                    GPIO_PIN_9
+#define I2Cx_SDA_PIN                    GPIO_PIN_7
 #define I2Cx_SDA_GPIO_PORT              GPIOB
 #define I2Cx_SCL_SDA_AF                 GPIO_AF4_I2C1
 
@@ -57,32 +57,12 @@
 #define I2Cx_EV_IRQHandler              I2C1_EV_IRQHandler
 #define I2Cx_ER_IRQHandler              I2C1_ER_IRQHandler
 
-#define I2Cx                            I2C1
-#define I2Cx_CLK_ENABLE()               __I2C1_CLK_ENABLE()
-#define I2Cx_SDA_GPIO_CLK_ENABLE()      __GPIOB_CLK_ENABLE()
-#define I2Cx_SCL_GPIO_CLK_ENABLE()      __GPIOB_CLK_ENABLE()
 
-#define I2Cx_FORCE_RESET()              __I2C1_FORCE_RESET()
-#define I2Cx_RELEASE_RESET()            __I2C1_RELEASE_RESET()
-
-/* Definition for I2Cx Pins */
-#define I2Cx_SCL_PIN                    GPIO_PIN_8
-#define I2Cx_SCL_GPIO_PORT              GPIOB
-#define I2Cx_SDA_PIN                    GPIO_PIN_9
-#define I2Cx_SDA_GPIO_PORT              GPIOB
-#define I2Cx_SCL_SDA_AF                 GPIO_AF4_I2C1
-
-/* Definition for I2Cx's NVIC */
-#define I2Cx_EV_IRQn                    I2C1_EV_IRQn
-#define I2Cx_ER_IRQn                    I2C1_ER_IRQn
-#define I2Cx_EV_IRQHandler              I2C1_EV_IRQHandler
-#define I2Cx_ER_IRQHandler              I2C1_ER_IRQHandler
 
 /* User can use this section to tailor USARTx/UARTx instance used and associated
    resources */
 /* Definition for USARTx clock resources */
-#define SP1ML 1
-#ifdef SP1ML
+
 
 #define USARTx                           USART1
 #define USARTx_CLK_ENABLE()              __USART1_CLK_ENABLE();
@@ -107,32 +87,7 @@
 #define USARTx_TX_AF                     GPIO_AF7_USART1
 #define USARTx_RX_AF                     GPIO_AF7_USART1
 
-#else
 
-#define USARTx                           USART2
-#define USARTx_CLK_ENABLE()              __USART2_CLK_ENABLE();
-#define DMAx_CLK_ENABLE()                __DMA1_CLK_ENABLE()
-#define USARTx_RX_GPIO_CLK_ENABLE()      __GPIOA_CLK_ENABLE()
-#define USARTx_TX_GPIO_CLK_ENABLE()      __GPIOA_CLK_ENABLE()
-
-#define USARTx_FORCE_RESET()             __USART2_FORCE_RESET()
-#define USARTx_RELEASE_RESET()           __USART2_RELEASE_RESET()
-
-/* Definition for USARTx Pins */
-#define USARTx_TX_PIN                    GPIO_PIN_2
-#define USARTx_TX_GPIO_PORT              GPIOA
-
-#define USARTx_RX_PIN                    GPIO_PIN_3
-#define USARTx_RX_GPIO_PORT              GPIOA
-
-/* Definition for USARTx's NVIC */
-#define USARTx_IRQn                      USART2_IRQn
-#define USARTx_IRQHandler                USART2_IRQHandler
-
-#define USARTx_TX_AF                     GPIO_AF7_USART2
-#define USARTx_RX_AF                     GPIO_AF7_USART2
-
-#endif
 
 /* Enable sensor mask */
 #define PRESSURE_SENSOR                         0x00000001
