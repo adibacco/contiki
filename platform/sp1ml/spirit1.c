@@ -46,7 +46,7 @@ extern volatile st_lib_spirit_flag_status rx_timeout;
 /*---------------------------------------------------------------------------*/
 #define XXX_ACK_WORKAROUND 1
 /*---------------------------------------------------------------------------*/
-#define DEBUG 1
+#define DEBUG 0
 #if DEBUG
 #include <stdio.h>
 #define PRINTF(...) printf(__VA_ARGS__)

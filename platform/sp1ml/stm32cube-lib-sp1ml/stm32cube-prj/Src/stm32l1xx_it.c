@@ -230,6 +230,29 @@ void EXTI3_IRQHandler(void)
 }
 
 
+
+/**
+* @brief  This function handles External lines 15 to 4 interrupt request.
+* @param  None
+* @retval None
+*/
+void EXTI4_IRQHandler(void)
+{
+  /* EXTI line 7 interrupt detected */
+  if(__HAL_GPIO_EXTI_GET_IT(RADIO_GPIO_3_EXTI_LINE))
+  {
+    __HAL_GPIO_EXTI_CLEAR_IT(RADIO_GPIO_3_EXTI_LINE);
+    
+    HAL_GPIO_EXTI_Callback(RADIO_GPIO_3_EXTI_LINE);
+    
+    spirit1_interrupt_callback();
+  }
+  __HAL_GPIO_EXTI_CLEAR_IT(GPIO_PIN_4);
+  
+ 
+}
+
+
 /**
 * @brief  This function handles External lines 15 to 4 interrupt request.
 * @param  None

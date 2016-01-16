@@ -114,10 +114,10 @@ RadioGpioPin;
 #define RADIO_GPIO_0_PUPD                            GPIO_NOPULL
 #define RADIO_GPIO_0_EXTI_LINE                       GPIO_PIN_4
 #define RADIO_GPIO_0_EXTI_MODE                       GPIO_MODE_IT_FALLING
-#define RADIO_GPIO_0_EXTI_IRQN                       EXTI9_5_IRQn 
+#define RADIO_GPIO_0_EXTI_IRQN                       EXTI4_IRQn 
 #define RADIO_GPIO_0_EXTI_PREEMPTION_PRIORITY        2
 #define RADIO_GPIO_0_EXTI_SUB_PRIORITY               2
-#define RADIO_GPIO_0_EXTI_IRQ_HANDLER                EXTI9_5_IRQHandler
+#define RADIO_GPIO_0_EXTI_IRQ_HANDLER                EXTI4_IRQHandler
 
 #define RADIO_GPIO_1_PORT                            GPIOC
 #define RADIO_GPIO_1_PIN                             GPIO_PIN_4
@@ -127,10 +127,10 @@ RadioGpioPin;
 #define RADIO_GPIO_1_PUPD                            GPIO_NOPULL
 #define RADIO_GPIO_1_EXTI_LINE                       GPIO_PIN_4
 #define RADIO_GPIO_1_EXTI_MODE                       GPIO_MODE_IT_FALLING
-#define RADIO_GPIO_1_EXTI_IRQN                       EXTI9_5_IRQn 
+#define RADIO_GPIO_1_EXTI_IRQN                       EXTI4_IRQn 
 #define RADIO_GPIO_1_EXTI_PREEMPTION_PRIORITY        2
 #define RADIO_GPIO_1_EXTI_SUB_PRIORITY               2
-#define RADIO_GPIO_1_EXTI_IRQ_HANDLER                EXTI9_5_IRQHandler
+#define RADIO_GPIO_1_EXTI_IRQ_HANDLER                EXTI4_IRQHandler
 
 #define RADIO_GPIO_2_PORT                            GPIOC
 #define RADIO_GPIO_2_PIN                             GPIO_PIN_4
@@ -140,10 +140,10 @@ RadioGpioPin;
 #define RADIO_GPIO_2_PUPD                            GPIO_NOPULL
 #define RADIO_GPIO_2_EXTI_LINE                       GPIO_PIN_4
 #define RADIO_GPIO_2_EXTI_MODE                       GPIO_MODE_IT_FALLING
-#define RADIO_GPIO_2_EXTI_IRQN                       EXTI9_5_IRQn 
+#define RADIO_GPIO_2_EXTI_IRQN                       EXTI4_IRQn 
 #define RADIO_GPIO_2_EXTI_PREEMPTION_PRIORITY        2
 #define RADIO_GPIO_2_EXTI_SUB_PRIORITY               2
-#define RADIO_GPIO_2_EXTI_IRQ_HANDLER                EXTI9_5_IRQHandler
+#define RADIO_GPIO_2_EXTI_IRQ_HANDLER                EXTI4_IRQHandler
 
 
 
@@ -156,10 +156,10 @@ RadioGpioPin;
 #define RADIO_GPIO_3_PUPD                          GPIO_NOPULL
 #define RADIO_GPIO_3_EXTI_LINE                     GPIO_PIN_4
 #define RADIO_GPIO_3_EXTI_MODE                     GPIO_MODE_IT_FALLING
-#define RADIO_GPIO_3_EXTI_IRQN                     EXTI9_5_IRQn 
+#define RADIO_GPIO_3_EXTI_IRQN                     EXTI4_IRQn 
 #define RADIO_GPIO_3_EXTI_PREEMPTION_PRIORITY      2
 #define RADIO_GPIO_3_EXTI_SUB_PRIORITY             2
-#define RADIO_GPIO_3_EXTI_IRQ_HANDLER              EXTI9_5_IRQHandler
+#define RADIO_GPIO_3_EXTI_IRQ_HANDLER              EXTI4_IRQHandler
 
 
 #define RADIO_GPIO_SDN_PORT                        GPIOA
@@ -170,7 +170,7 @@ RadioGpioPin;
 #define RADIO_GPIO_SDN_PUPD                        GPIO_PULLUP
 
 
-#define RADIO_GPIO_IRQ		RADIO_GPIO_0
+#define RADIO_GPIO_IRQ		RADIO_GPIO_3
 #define SPIRIT_GPIO_IRQ         SPIRIT_GPIO_0
 
 /* Exported Variables ------------------------------------------------------------*/
